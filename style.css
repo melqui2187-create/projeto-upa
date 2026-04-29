@@ -1,0 +1,114 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #74ebd5, #9face6);
+    margin: 0;
+    padding: 20px;
+}
+
+/* Título */
+h1 {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* Container principal */
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Inputs */
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    transition: 0.3s;
+}
+
+input:focus, select:focus {
+    border-color: #6c63ff;
+    outline: none;
+}
+
+/* Botões */
+button {
+    margin-top: 10px;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #6c63ff;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #574fd6;
+    transform: scale(1.03);
+}
+
+/* Botões lado a lado */
+.botoes {
+    display: flex;
+    gap: 10px;
+}
+
+/* Contador */
+.contador {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Lista */
+#fila {
+    margin-top: 20px;
+}
+
+/* Card do paciente */
+.paciente {
+    background: #f9f9f9;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.paciente:hover {
+    transform: translateY(-3px);
+}
+
+/* Cores por prioridade */
+.vermelha {
+    border-left: 6px solid #ff4757;
+}
+
+.amarela {
+    border-left: 6px solid #ffa502;
+}
+
+.verde {
+    border-left: 6px solid #2ed573;
+}
+
+/* Texto dentro do card */
+.paciente p {
+    margin: 5px 0;
+}
+
+/* Botão remover */
+.paciente button {
+    background: #ff4757;
+}
+
+.paciente button:hover {
+    background: #e84118;
+}

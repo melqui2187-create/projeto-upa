@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Fila de Atendimento - UPA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>🏥 Fila de Atendimento - UPA</h1>
+
+    <div class="container">
+
+        <!-- FORMULÁRIO -->
+        <h3>Cadastrar Paciente</h3>
+
+        <input type="text" id="nome" placeholder="Nome">
+
+        <input type="number" id="idade" placeholder="Idade">
+
+        <input type="text" id="sintoma" placeholder="Sintoma">
+
+        <select id="prioridade">
+            <option value="">Selecione a prioridade</option>
+            <option value="Vermelha">🔴 Vermelha</option>
+            <option value="Amarela">🟡 Amarela</option>
+            <option value="Verde">🟢 Verde</option>
+        </select>
+
+        <button onclick="cadastrarPaciente()">Cadastrar</button>
+
+        <!-- BOTÕES -->
+        <div class="botoes">
+            <button onclick="chamarProximo()">📢 Chamar Próximo</button>
+        </div>
+
+        <!-- CONTADOR -->
+        <p class="contador">Total de pacientes: <span id="total">0</span></p>
+
+        <!-- FILA -->
+        <div id="fila"></div>
+
+    </div>
+
+    <!-- JS -->
+    <script src="main.js"></script>
+
+</body>
+</html>
